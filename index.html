@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+ <style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+</style>
+<html>
+  <head>
+  <center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<img src="discord.png" height="42" width="42"><br>
+	<!--<a href="https://hugonun.github.io/discordid2date/" class=original> Original</a>-->
+    <title>Discord ID to Creation Date</title>
+    <meta name="author" content="hugonun">
+    <meta name="description" content="Turn a Discord ID into Creation Date. Works with channel ID, server ID, message ID, user ID, and more.">
+    <meta name="keywords" content="discord,id,snowflake,unix,timestamp">
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-timezone-with-data-10-year-range.min.js"></script>
+    <script src="main.js"></script> 
+  </head>
+  <body>
+    <h1>Discord ID to Creation Date</h1>
+    <p>Place the ID in the Discord ID field.</p>
+    </strong><input class="inputbox" type="text" name="discordid" placeholder="Discord ID" id="i-id"><br><br>
+    <button type="button" onclick="convert(document.getElementById('i-id').value)">Convert</button><br>
+	<br>
+	<strong>(UK) Creation Date - </strong><span id="i-date24"></span><br>
+	<strong>Time ago: </strong><span id="i-timeago"></span><br>
+	
+  </body>
+</html>
+
+<style>
+	body{
+	font-family: Open Sans;
+	color: #ffffff;
+	background-color: #23272A;
+	}
+	
+	img{
+	size: 15px;
+	}
+	
+	.inputbox{
+		text-align: center;
+		}
+
+	button {
+	background-color: #7289DA;
+	border: none;
+	color: white;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	}
+	
+	.original{
+		font-family: Arial;
+		font-size: 8px;
+		color: white;
+		}
+		
+		.xxxx{
+		font-size: 8px;
+		}
+	</style>
